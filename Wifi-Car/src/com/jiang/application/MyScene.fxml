@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="511.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jiang.controller.MyController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="263.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="357.0" />
+      <TextField id="address" fx:id="address" layoutX="558.0" layoutY="90.0" text="127.0.0.1" />
+      <Button id="connect" layoutX="550.0" layoutY="181.0" mnemonicParsing="false" onAction="#connect" text="Connect" />
+      <Label layoutX="469.0" layoutY="95.0" text="Address" textAlignment="CENTER" />
+      <Label layoutX="476.0" layoutY="129.0" text="Port" textAlignment="CENTER" />
+      <TextField id="port" fx:id="port" layoutX="558.0" layoutY="134.0" text="1996" />
+      <Button id="disConnect" layoutX="659.0" layoutY="181.0" mnemonicParsing="false" onAction="#disConnect" text="Disconnect" />
+      <Button id="forward" layoutX="551.0" layoutY="301.0" mnemonicParsing="false" onAction="#move" text="Forward" />
+      <Button id="turnLeft" layoutX="442.0" layoutY="342.0" mnemonicParsing="false" text="Turn Left" />
+      <Button id="turnRight" layoutX="659.0" layoutY="342.0" mnemonicParsing="false" text="Turn Right" />
+      <Button layoutX="546.0" layoutY="382.0" mnemonicParsing="false" text="Backward" />
+      <TextField id="speed" fx:id="speed" layoutX="537.0" layoutY="342.0" prefHeight="30.0" prefWidth="106.0" text="1" />
+      <Button id="plus" layoutX="614.0" layoutY="342.0" mnemonicParsing="false" onAction="#clickPlus" text="+" />
+      <Button id="minus" layoutX="583.0" layoutY="342.0" mnemonicParsing="false" onAction="#clickMinus" prefHeight="30.0" prefWidth="31.0" text="-" textAlignment="CENTER" />
+      <ImageView id="status" fitHeight="38.0" fitWidth="46.0" layoutX="469.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="message" fx:id="message" layoutX="240.0" layoutY="387.0" text="Label" />
+   </children>
+</AnchorPane>
