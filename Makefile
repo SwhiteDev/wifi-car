@@ -8,12 +8,15 @@ SRC += gtk.c
 
 OBJS = $(patsubst %.c, %.o, $(SRC))
 
-ALL : socket gtk
+ALL : socket gtk server
 
 
 gtk : gtk.c 
 	$(CC) $(CFLAGS) $(GTK_FLAGS) -o $@ $^ $(LIBS)
 
+server : server.c
+	$(CC) $(CFLAGS) -o $@ $^
+	
 socket : socket.c
 	$(CC) $(CFLAGS) -o $@ $^
 

@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall$/;"	m
+CLEAR	server.c	12;"	d	file:
+Client	Wifi-Car/src/com/jiang/socket/Client.java	/^public class Client {$/;"	c
+GTK_FLAGS	Makefile	/^GTK_FLAGS = `pkg-config --cflags gtk+-3.0 gmodule-2.0`$/;"	m
+LIBS	Makefile	/^LIBS = `pkg-config --libs gtk+-3.0 gmodule-2.0`$/;"	m
+MAXPENDING	server.c	/^static const int MAXPENDING = 5; \/* Maximim outstanding connection requests *\/$/;"	v	file:
+Main	Wifi-Car/src/com/jiang/application/Main.java	/^public class Main extends Application {$/;"	c
+MyController	Wifi-Car/src/com/jiang/controller/MyController.java	/^public class MyController implements Initializable{$/;"	c
+OBJS	Makefile	/^OBJS = $(patsubst %.c, %.o, $(SRC))$/;"	m
+SRC	Makefile	/^SRC = socket.c$/;"	m
+Sender	Wifi-Car/src/com/jiang/socket/Sender.java	/^public class Sender {$/;"	c
+Server	Wifi-Car/src/com/jiang/socket/Server.java	/^	 public Server() throws Exception{$/;"	m	class:Server
+Server	Wifi-Car/src/com/jiang/socket/Server.java	/^public class Server {$/;"	c
+address	Wifi-Car/src/com/jiang/controller/MyController.java	/^	private TextField address;$/;"	f	class:MyController	file:
+clickMinus	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void clickMinus(ActionEvent event){$/;"	m	class:MyController
+clickPlus	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void clickPlus(ActionEvent event){$/;"	m	class:MyController
+com.jiang.application	Wifi-Car/src/com/jiang/application/Main.java	/^package com.jiang.application;$/;"	p
+com.jiang.controller	Wifi-Car/src/com/jiang/controller/MyController.java	/^package com.jiang.controller;$/;"	p
+com.jiang.socket	Wifi-Car/src/com/jiang/socket/Client.java	/^package com.jiang.socket;$/;"	p
+com.jiang.socket	Wifi-Car/src/com/jiang/socket/Sender.java	/^package com.jiang.socket;$/;"	p
+com.jiang.socket	Wifi-Car/src/com/jiang/socket/Server.java	/^package com.jiang.socket;$/;"	p
+connect	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void connect(ActionEvent event){$/;"	m	class:MyController
+connect	Wifi-Car/src/com/jiang/socket/Client.java	/^	public static void connect(String address, int port) throws Exception{$/;"	m	class:Client
+disConnect	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void disConnect(ActionEvent event){$/;"	m	class:MyController
+disConnect	Wifi-Car/src/com/jiang/socket/Client.java	/^	public static void disConnect() throws Exception{$/;"	m	class:Client
+initialize	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void initialize(URL location, ResourceBundle resources) {$/;"	m	class:MyController
+input	Wifi-Car/src/com/jiang/socket/Sender.java	/^	public static void input(Socket socket) throws IOException{$/;"	m	class:Sender
+main	Wifi-Car/src/com/jiang/application/Main.java	/^	public static void main(String[] args) {$/;"	m	class:Main
+main	Wifi-Car/src/com/jiang/socket/Server.java	/^	public static void main(String[] args) throws Exception{$/;"	m	class:Server
+main	gtk.c	/^int main(int argc, char **argv)$/;"	f
+main	server.c	/^int main(int argc, char **argv)$/;"	f
+main	socket.c	/^int main(int argc, char **argv)$/;"	f
+message	Wifi-Car/src/com/jiang/controller/MyController.java	/^	private Label message;$/;"	f	class:MyController	file:
+move	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void move(){$/;"	m	class:MyController
+output	Wifi-Car/src/com/jiang/socket/Sender.java	/^	public static void output(Socket socket, String message) throws IOException{$/;"	m	class:Sender
+port	Wifi-Car/src/com/jiang/controller/MyController.java	/^	private TextField port;$/;"	f	class:MyController	file:
+port	Wifi-Car/src/com/jiang/socket/Server.java	/^	 private int port = 2000;$/;"	f	class:Server	file:
+serverSocket	Wifi-Car/src/com/jiang/socket/Server.java	/^	 private ServerSocket serverSocket;$/;"	f	class:Server	file:
+service	Wifi-Car/src/com/jiang/socket/Server.java	/^	 public void service(){$/;"	m	class:Server
+showDateTime	Wifi-Car/src/com/jiang/controller/MyController.java	/^   public void showDateTime(ActionEvent event) {$/;"	m	class:MyController
+socket	Wifi-Car/src/com/jiang/controller/MyController.java	/^	Socket socket = null;$/;"	f	class:MyController
+socket	Wifi-Car/src/com/jiang/socket/Client.java	/^	private static Socket socket = null;$/;"	f	class:Client	file:
+speed	Wifi-Car/src/com/jiang/controller/MyController.java	/^	private TextField speed;$/;"	f	class:MyController	file:
+start	Wifi-Car/src/com/jiang/application/Main.java	/^	public void start(Stage primaryStage) {$/;"	m	class:Main
