@@ -20,7 +20,7 @@
       <Label layoutX="476.0" layoutY="129.0" text="Port" textAlignment="CENTER" />
       <TextField id="port" fx:id="port" layoutX="558.0" layoutY="134.0" text="1996" />
       <Button id="disConnect" layoutX="659.0" layoutY="181.0" mnemonicParsing="false" onAction="#disConnect" text="Disconnect" />
-      <Button id="forward" layoutX="551.0" layoutY="301.0" mnemonicParsing="false" text="Forward" />
+      <Button id="forward" layoutX="551.0" layoutY="301.0" mnemonicParsing="false" onAction="#move" text="Forward" />
       <Button id="turnLeft" layoutX="442.0" layoutY="342.0" mnemonicParsing="false" text="Turn Left" />
       <Button id="turnRight" layoutX="659.0" layoutY="342.0" mnemonicParsing="false" text="Turn Right" />
       <Button layoutX="546.0" layoutY="382.0" mnemonicParsing="false" text="Backward" />

@@ -29,7 +29,7 @@ public class MyController implements Initializable{
 	@FXML
 	private Label message;
 	
-	Socket socket = null;
+//	Socket socket = null;
 	
 //	Pattern speedPattern = "^[0-9]$";
 
@@ -60,8 +60,12 @@ public class MyController implements Initializable{
 	   String address = this.address.getText();
 	   int port = Integer.parseInt(this.port.getText());
 	   try {
-		   Client.connect(address, port);
+		   Socket socket = Client.connect(address, port);
 		   message.setText("连接成功");
+		   System.out.println("ok");
+		   Sender.output(socket, "sb");
+		   Thread.sleep(3000);
+		   Sender.input(socket);
 	   } catch (Exception e) {
 		   e.printStackTrace();
 		   message.setText("连接失败");
@@ -86,7 +90,7 @@ public class MyController implements Initializable{
 	   port.setEditable(true);
    }
    
-   public void move(){
+   public void move(Socket socket){
 	   int speed = Integer.parseInt(this.speed.getText());
 	   try {
 		Sender.output(socket, speed+"");
